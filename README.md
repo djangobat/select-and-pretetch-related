@@ -1,6 +1,6 @@
-# Ví dụ sử dụng Django Filter
+# select_related và prefetch_related
 
-Xem chi tiết bài viết tại [Tối ưu hóa queryset với select_related và prefetch_related ]()
+Xem chi tiết bài viết tại [Tối ưu hóa queryset với select_related và prefetch_related ](https://djangobat.com/blog/toi-uu-hoa-queryset-voi-select_related-va-prefetch_related/)
 
 
 ## Cài đặt
@@ -21,11 +21,17 @@ pip install -r requirements.txt
 Tạo database:
 
 ```bash
-python manage.py makemigrations books
+python manage.py makemigrations blog
 python manage.py migrate
 ```
 
-Thuực hiện debug:
+Thêm dữ liệu vào:
+
+```bash
+python manage.py load_items
+```
+
+Chạy debugger:
 
 ```bash
 python manage.py run_debugger
